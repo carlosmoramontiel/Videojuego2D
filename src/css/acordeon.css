@@ -1,20 +1,4 @@
-:root{
-    --sombra-ppal: #c9c9c9;
-    --sombra-sec: #ffffff;
-}
-
-.acordeon {
-    width: 90%;
-    padding: 2rem;
-    color: black;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    border-radius: 1rem;
-    background-color: white;
-    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  }
-  
+ 
   .acordeon .bloque {
     margin: 0 0 1rem;
     padding: 1rem;
@@ -23,8 +7,6 @@
     transition: all 0.4s ease;
     border-radius: 1rem;
     background-color: white;
-    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   }
   
   .acordeon .h2 {
@@ -34,23 +16,21 @@
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 1rem;
-    background-color: white;
-    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    background-color: var(--lightblue);
     cursor: pointer;
   }
+
   .acordeon .h2:hover {
     color: black;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 1rem;
-    background-color: white;
-    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
-            box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
+    background-color: var(--blue);
+             
   }
   
   .acordeon .contenido {
-    height: 0;
+    height:0;
     padding: 0rem;
     overflow: hidden;
     -webkit-transition: all 0.5s ease;
@@ -62,7 +42,7 @@
   }
   
   .acordeon .bloque.activo .contenido {
-    height: 25rem;
+    height: fit-content;
   }
   
   .acordeon * iframe{
@@ -76,4 +56,10 @@
 
   section{
     width: 70%;
+  }
+
+  div.activo{
+    .h2{
+      background-color: var(--blue);
+    }
   }

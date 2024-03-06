@@ -1,10 +1,3 @@
-:root {
-    --negro: #393939;
-    --blanco: #ececec;
-    --sombra-ppal: #c9c9c9;
-    --sombra-sec: #ffffff;
-  }
-
 #lightbox{
     display: flex;
     flex-direction: column;
@@ -14,15 +7,7 @@
     font-family: var(--tipo-principal);
     font-size: 100%;
     line-height: 1.4em;
-    /* min-height: 40vh; */
-    /* background-color: var(--blanco); */
-    color: var(--negro);
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-    font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -40,38 +25,26 @@
   
   .ul {
     width: 80%;
-    background: lightgrey;
     padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); */
+
     gap: 1em;
-    color: var(--negro);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 1em;
-    background-color: var(--blanco);
-    -webkit-box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    background-color: white;
   }
   
   .ul .li {
-    background: orange;
     overflow: hidden;
-    color: var(--negro);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 1em;
-    background-color: var(--blanco);
-    -webkit-box-shadow: 0.8em 0.8em 1.6em var(--sombra-ppal), -0.8em -0.8em 1.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 0.8em 0.8em 1.6em var(--sombra-ppal), -0.8em -0.8em 1.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   }
   
   .ul .img {
-    /* min-height: 25vh; */
     height: 100%;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -90,7 +63,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    
     z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,40 +96,31 @@
   .lightbox .cerrar {
     width: 5em;
     height: 3em;
-    background: orange;
     margin: 0 0 1em;
-    color: var(--negro);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 1em;
+    border: 1px solid black;
     background-color: var(--blanco);
-    -webkit-box-shadow: 0.5em 0.5em 1em var(--sombra-ppal), -0.5em -0.5em 1em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 0.5em 0.5em 1em var(--sombra-ppal), -0.5em -0.5em 1em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
     cursor: pointer;
   }
   
   .lightbox .cerrar:hover {
-    color: var(--negro);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 1em;
-    background-color: var(--blanco);
-    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.5em 0.5em 1em var(--sombra-ppal), inset -0.5em -0.5em 1em var(--sombra-sec);
-            box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.5em 0.5em 1em var(--sombra-ppal), inset -0.5em -0.5em 1em var(--sombra-sec);
-  }
+    background-color: var(--hover)
+ }
   
   .lightbox .grande {
     width: 80%;
-    /* height: 80vh; */
-    background: lightblue;
+
     color: var(--negro);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 1em;
     background-color: var(--blanco);
-    -webkit-box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-            box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  }
+ }
   
   
   #Puerto {
