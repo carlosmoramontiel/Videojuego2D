@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Behind The Cave</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/acordeon.css">
+        <link rel="stylesheet" href="../css/lightbox.css">
+        <link rel="stylesheet" href="../css/tabs.css">
+        <link rel="stylesheet" href="../css/carrusel.css">
+    </head>
+    <body>
+        <header>
+            <img src="../assets/img/Logo.png" alt="Logo VideoJuego" class="logo">
+            <h1>Behind The Cave</h1>
+        </header>
+        
+        <main>
+            <!-- Galería Lightbox Escenarios -->
+            <h2>Escenarios</h2>
+            <section id="lightbox">
+                <!-- <div>
+                    <p id="Oceano">OCÉANO</p>
+                    <p id="Isla">ISLA</p>
+                    <p id="Puerto">PUERTO</p>
+                </div> -->
+                <div>
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="#" class="a" title="Imagen 1">
+                                <img src="../assets/img/Puerto.png" alt="Imagen 1" class="img" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="a" title="Imagen 2">
+                                <img src="../assets/img/Océano.png" alt="Imagen 2" class="img" loading="lazy">
+                            </a>
+                            
+                        </li>
+                        <li class="li">
+                            <a href="#" class="a" title="Imagen 3">
+                                <img src="../assets/img/Isla.png" alt="Imagen 3" class="img" loading="lazy">
+                            </a>
+                            
+                        </li>
+                    </ul>
+                    
+                    <div class="lightbox">
+                        <button class="cerrar">Cerrar</button>
+                        <img src="../assets/img/Puerto.png" alt="Imagen 1" class="grande" loading="lazy">
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Tabs Personajes -->
+            <h2>Personajes</h2>
+            <section id="tabs">
+              <div class="contenedor">
+                <h3>Barquero</h3>
+                <ul class="ul2">
+                    <li class="li2 activo">Frontal</li>
+                    <li class="li2">Espaldas</li>
+                </ul>
+                  <div class="subcontenedor">
+                      <img src="../assets/img/BarqueroF.png" alt="" class="bloque2 activo">
+                      <img src="../assets/img/BarqueroB.png" alt="" class="bloque2">
+                  </div>
+              </div>
+          
+              <div class="contenedor">
+                      <h3>Náufrago</h3>
+                      <ul class="ul2">
+                          <li class="li3 activo">Frontal</li>
+                          <li class="li3">Espaldas</li>
+                      </ul>
+          
+                  <div class="subcontenedor">
+                      <img src="../assets/img/NaufragoF.png" alt="" class="bloque3 activo">
+                      <img src="../assets/img/NaufragoB.png" alt="" class="bloque3">
+                  </div>
+              </div>
+            </section>
+
+            <!-- Carrusel Objetos -->
+            <h2 id="h2Carrousel">Objetos</h2>
+            <section id="carrusel">
+              <div class="carrousel">
+                  <div class="grande2">
+                      <img src="../assets/img/Antorcha.png" alt="Imagen 1" class="img">
+                      <img src="../assets/img/Bird1.png" alt="Imagen 2" class="img">
+                      <img src="../assets/img/Cangrejo.png" alt="Imagen 2" class="img">
+                      <img src="../assets/img/Hamaca.png" alt="Imagen 2" class="img">
+                      <img src="../assets/img/Pez1.png" alt="Imagen 2" class="img">
+                  </div>
+          
+                  <ul class="puntos">
+                      <li class="punto activo"></li>
+                      <li class="punto"></li>
+                      <li class="punto"></li>
+                      <li class="punto"></li>
+                      <li class="punto"></li>
+                  </ul>
+              </div>
+            </section>
+
+            <!-- Acordeón Contenido Multimedia -->
+            <h2>Contenido Multimedia</h2>
+            <section id="acordeon">
+                <div class="acordeon">
+                    <div class="bloque activo">
+                      <h2 class="h2">Vídeo</h2>
+                      <div class="contenido">
+                        <iframe src="../assets/video/Navegando.mp4"></iframe>
+                      </div>
+                    </div>
+                    <div class="bloque">
+                      <h2 class="h2">Audios Escenario Puerto</h2>
+                      <div class="contenido">
+                        <h4>Sonido ambiente del Puerto</h4>
+                        <audio controls>
+                          <source src="../assets/audio/Puerto-ambiente.mp3"></source>
+                        </audio>
+                      </div>
+                    </div>
+                    <div class="bloque">
+                      <h2 class="h2">Audios Escenario Velero</h2>
+                      <div class="contenido">
+                        <h4>Sonido ambiente del Velero</h4>
+                        <audio controls>
+                          <source src="../assets/audio/Velero-ambiente.mp3"></source>
+                        </audio>
+                      </div>
+                    </div>
+                    <div class="bloque">
+                      <h2 class="h2">Audios Escenario Isla</h2>
+                      <div class="contenido">
+                        <h4>Sonido ambiente de la Isla</h4>
+                        <audio controls>
+                          <source src="../assets/audio/Isla-ambiente.mp3"></source>
+                        </audio>
+                      </div>
+                    </div>
+                    <div class="bloque">
+                      <h2 class="h2">Audio Ambiente de Gaviotas</h2>
+                      <div class="contenido">
+                        <h4>Audio De Gaviotas 1</h4>
+                        <audio controls>
+                          <source src="../assets/audio/Gaviota1.mp3"></source>
+                        </audio>
+                        
+                        <h4>Audio De Gaviotas</h4>
+                        <audio controls>
+                          <source src="../assets/audio/Gaviota2.mp3"></source>
+                        </audio>
+              
+                        <h4>Audio De 2 minutos de Gaviotas</h4>
+                        <audio controls>
+                          <source src="../assets/audio/2minGaviotas.mp3"></source>
+                        </audio>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h4>Nombres</h4>
+            <h4>2°DAW - DIW</h4>
+        </footer>
+
+        <script src="../js/index.js"></script>
+    </body>
+</html>

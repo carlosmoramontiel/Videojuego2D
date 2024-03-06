@@ -1,0 +1,130 @@
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+}
+
+
+.contenedor {
+  min-width: fit-content;
+  width: 30%;
+  height: fit-content;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.contenedor .ul2 {
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.contenedor li {
+  padding: 1em;
+  font-size: 10px;
+  margin: 0 2em 0 0;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.contenedor li.activo {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.contenedor .subcontenedor {
+  min-width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor .bloque2, .bloque3 {
+  /* height: fit-content; */
+  padding: 1em;
+  position: absolute;
+  top: 2em;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contenedor .bloque2.activo {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.contenedor .bloque3.activo {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.contenedor > h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  margin: 20px;
+}
+
+#tabs {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  min-height: fit-content;
+  height: 700px;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+}
+
+.ul2 > .li2, .ul2 > .li3{
+    font-size: 16px;
+}
+
+@media (max-width: 670px) {
+    .bloque2, .bloque3 {
+        width: 150px;
+    }
+
+    .contenedor > h3 {
+        font-size: 12px;
+    }
+
+    .ul2 > .li2, .ul2 > .li3{
+        font-size: 8px;
+    }
+}

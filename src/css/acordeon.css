@@ -1,0 +1,79 @@
+:root{
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+}
+
+.acordeon {
+    width: 90%;
+    padding: 2rem;
+    color: black;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: white;
+    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+            box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .acordeon .bloque {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    color: black;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: white;
+    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+            box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .acordeon .h2 {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    color: black;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: white;
+    -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+            box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    cursor: pointer;
+  }
+  .acordeon .h2:hover {
+    color: black;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: white;
+    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
+            box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
+  }
+  
+  .acordeon .contenido {
+    height: 0;
+    padding: 0rem;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .acordeon .bloque.activo .contenido {
+    height: 25rem;
+  }
+  
+  .acordeon * iframe{
+    width: 50%;
+    height: 90%;
+  }
+  
+  .acordeon * audio{
+    width: 50%;
+  }
+
+  section{
+    width: 70%;
+  }
